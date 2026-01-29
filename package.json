@@ -1,0 +1,10 @@
+{
+  "name": "virtual-event-masterclass",
+  "version": "1.0.0",
+  "description": "Sales funnel for the 3-Day Virtual Event Monetization Masterclass",
+  "scripts": {
+    "dev": "npx serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,441 @@
+/* 
+   PREMIUM DARK THEME - 3-Day Virtual Event Monetization Masterclass 
+   Colors: Charcoal, Black, Gold, White
+*/
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-card: #141414;
+    --bg-card-hover: #1f1f1f;
+    --gold-primary: #D4AF37;
+    --gold-hover: #F2C94C;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --border-color: #333333;
+    --success: #27ae60;
+    --font-heading: 'Outfit', 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-gold {
+    color: var(--gold-primary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--gold-primary) 0%, #B8860B 100%);
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    background: linear-gradient(135deg, var(--gold-hover) 0%, #D4AF37 100%);
+}
+
+.btn-large {
+    font-size: 1.25rem;
+    padding: 20px 48px;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--gold-primary);
+    color: var(--gold-primary);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--gold-hover);
+    border-color: var(--gold-hover);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    padding: 100px 0;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#fff, #ccc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.authority-line {
+    font-size: 0.9rem;
+    color: var(--gold-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* SOCIAL PROOF */
+.social-proof {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.proof-grid {
+    display: grid;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.proof-box {
+    text-align: left;
+    padding: 30px;
+    border-left: 3px solid var(--gold-primary);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* WHO IS THIS FOR */
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: var(--bg-card);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.check-item:hover {
+    background: var(--bg-card-hover);
+}
+
+.check-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* DAY BREAKDOWN */
+.day-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.day-card.highlight {
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.day-badge {
+    background: rgba(212, 175, 55, 0.2);
+    color: var(--gold-primary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.day-content ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.day-content li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: #ccc;
+}
+
+.day-content li:before {
+    content: "•";
+    color: var(--gold-primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* PRICING */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: var(--bg-card);
+    padding: 40px 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card.featured {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+    border: 1px solid var(--gold-primary);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+    position: relative;
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: var(--text-main);
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.features-list {
+    list-style: none;
+    margin: 30px 0;
+    flex-grow: 1;
+}
+
+.features-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: start;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.features-list li i {
+    color: var(--gold-primary);
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+/* MODAL STYLES */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid var(--gold-primary);
+    box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--font-body);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+    background: #050505;
+    color: var(--text-muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
