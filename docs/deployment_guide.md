@@ -37,5 +37,17 @@ Once your code is on GitHub, Vercel makes deployment automatic.
 6.  Click **Deploy**.
 
 ## 🎉 Done!
-Vercel will give you a live URL (e.g., `virtual-event-masterclass.vercel.app`).
+Vercel will give you a live URL (e.g., `https://virtual-event-masterclass.vercel.app`).
 Every time you `git push` changes to GitHub, Vercel will automatically update your live site.
+
+## ⚠️ Part 3: IMPORTANT Final Step
+Now that you have your **Live Vercel URL**, you must update Systeme.io so the "Register" button redirects to the right place (instead of `localhost`).
+
+1.  Copy your new Vercel URL (e.g., `https://your-site.vercel.app`).
+2.  Log in to **Systeme.io** and open your Popup Editor.
+3.  Click the **Submit Button**.
+4.  Change the **Redirection URL** to:
+    `https://your-site.vercel.app/thank-you-free.html`
+5.  Save changes in Systeme.io.
+
+**Now your live site is 100% functional.**
