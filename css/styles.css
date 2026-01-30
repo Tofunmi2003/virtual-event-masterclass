@@ -133,10 +133,11 @@ a {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(#fff, #ccc);
+    background: -webkit-linear-gradient(#FFD700, #FDB931);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
 }
 
 .hero h2 {
