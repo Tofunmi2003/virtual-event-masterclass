@@ -7,8 +7,9 @@
     --bg-dark: #0a0a0a;
     --bg-card: #141414;
     --bg-card-hover: #1f1f1f;
-    --gold-primary: #D4AF37;
-    --gold-hover: #F2C94C;
+    --gold-primary: #FFD700;
+    /* Updated to brighter Gold to POP */
+    --gold-hover: #FFEA00;
     --text-main: #ffffff;
     --text-muted: #a0a0a0;
     --border-color: #333333;
@@ -32,7 +33,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -41,6 +41,14 @@ h6 {
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--text-main);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--gold-primary);
+    /* Section headings now Yellow */
 }
 
 a {
